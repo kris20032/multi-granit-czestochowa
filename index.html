@@ -4,18 +4,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MULTI-GRANIT Ireneusz Kita — Blaty, parapety, schody i galanteria z kamienia · Częstochowa</title>
-<meta name="description" content="MULTI-GRANIT Ireneusz Kita — blaty kuchenne i łazienkowe, parapety, schody, posadzki i obudowy kominków z granitu i marmuru. Cięcie i obróbka kamienia na wymiar. Częstochowa i okolice." />
+<title>MULTI-GRANIT — Nagrobki i kamieniarstwo · Częstochowa</title>
+<meta name="description" content="MULTI-GRANIT — nagrobki granitowe, pomniki na zamówienie, renowacje i liternictwo. Z szacunkiem do pamięci, od projektu po montaż. Częstochowa i okolice." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   /* === PALETA === */
-  :root{ --cream:#F4F1EC; --cream-2:#E9E4DB; --espresso:#1F1C1A; --espresso-2:#37322E; --gold:#9C7C46; --gold-d:#7A5F33; --rose:#D8CFC2; --muted:#8A847B; --white:#FCFBF9; --shadow:0 18px 50px -22px rgba(31,28,26,.5); }
+  :root{ --cream:#F2F1EE; --cream-2:#E5E3DE; --espresso:#1E1C1A; --espresso-2:#38332F; --gold:#836A42; --gold-d:#67522F; --rose:#D4CCC0; --muted:#88837B; --white:#FCFBF9; --shadow:0 18px 50px -22px rgba(30,28,26,.5); }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{font-family:'Source Sans 3',sans-serif;color:var(--espresso);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.15}
+  h1,h2,h3,.serif{font-family:'Spectral',serif;font-weight:600;line-height:1.15}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
   .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;border-radius:999px;font-weight:500;font-size:.95rem;transition:.25s;cursor:pointer;border:1px solid transparent}
@@ -25,7 +25,7 @@
   .btn-dark:hover{background:var(--espresso-2)}
   header{position:sticky;top:0;z-index:50;background:rgba(250,245,239,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(192,145,95,.18)}
   nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;letter-spacing:.5px}
+  .logo{font-family:'Spectral',serif;font-size:1.5rem;font-weight:700;letter-spacing:.5px}
   .logo span{color:var(--gold-d)}
   .nav-links{display:flex;align-items:center;gap:2rem}
   .nav-links a{font-size:.92rem;color:var(--espresso-2);transition:.2s}
@@ -62,14 +62,14 @@
   .ed-offer .erow{display:grid;grid-template-columns:auto 1.1fr 1.9fr;gap:34px;align-items:baseline;
       padding:32px 0;border-bottom:1px solid color-mix(in srgb,var(--espresso) 14%,transparent);transition:padding .25s ease}
   .ed-offer .erow:hover{padding-left:12px}
-  .ed-offer .num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:700;color:var(--gold-d);line-height:.9}
-  .ed-offer .ttl{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600}
+  .ed-offer .num{font-family:'Spectral',serif;font-size:2.5rem;font-weight:700;color:var(--gold-d);line-height:.9}
+  .ed-offer .ttl{font-family:'Spectral',serif;font-size:1.4rem;font-weight:600}
   .ed-offer .desc{color:var(--muted);font-size:1rem;line-height:1.6;max-width:54ch}
 
   /* === EDITORIAL: band-manifest z cytatem === */
   .ed-quote{background:var(--espresso);color:#fff;text-align:center}
   .ed-quote .wrap{max-width:60rem}
-  .ed-quote blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.55rem,3.5vw,2.5rem);line-height:1.32}
+  .ed-quote blockquote{font-family:'Spectral',serif;font-style:italic;font-size:clamp(1.55rem,3.5vw,2.5rem);line-height:1.32}
   .ed-quote blockquote span{color:var(--gold)}
 
   /* === EDITORIAL: O nas — split, zdjęcie po prawej === */
@@ -198,6 +198,35 @@ section{padding-block:clamp(64px,10vw,128px)}
   .reveal{opacity:1!important;transform:none!important}
 }
 
+/* === FELT-QUALITY (anty-AI, „czuje się drogo") — 2026-06-21 === */
+/* Film grain: ledwo widoczne ziarno na całości (różnica „wygląda" vs „czuje się" drogo). pointer-events:none = nie blokuje klików. */
+body::after{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:180px 180px}
+/* Hierarchia przez przezroczystość (premium): eyebrow drugorzędny, nie krzyczy */
+.eyebrow{opacity:.88}
+/* Widoczny focus klawiatury (podłoga jakości a11y) */
+:focus-visible{outline:2px solid var(--gold-d);outline-offset:3px;border-radius:2px}
+/* Zaznaczanie tekstu w kolorze marki — drobny, „dopieszczony" detal */
+::selection{background:color-mix(in srgb,var(--gold) 26%,transparent)}
+
+/* === TIER 2 — STRUKTURA i RYTM (2026-06-21) === */
+/* Znacznik akcentu zamiast dekoracyjnych 01/02/03 (numeracja tylko gdy realna sekwencja → build.py "numbered") */
+.card .ic-mark{display:block;width:32px;height:3px;border-radius:2px;background:var(--gold);opacity:.92;margin-bottom:var(--space-4)}
+/* Rytm sekcji: galeria jako odrębny, jaśniejszy pas + cienkie linie między jasnymi sekcjami (koniec z „płaskim kremem") */
+#galeria{background:var(--cream-2)}
+#oferta,#galeria,#kontakt{border-top:var(--hairline)}
+/* Jedna „ozdobna" mikro-interakcja: podkreślenie linków nawigacji rosnące od lewej (reszta ruchu = reveal) */
+.nav-links a:not(.btn){position:relative}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:100%;
+  background:var(--gold-d);transform:scaleX(0);transform-origin:left;transition:transform var(--dur) var(--ease)}
+.nav-links a:not(.btn):hover::after{transform:scaleX(1)}
+/* Hover karty (profesjonalny): złoty pasek „przejeżdża" przez górę karty + tytuł się złoci */
+.card .ic-mark{transition:width var(--dur) var(--ease),opacity var(--dur) var(--ease)}
+.card:hover .ic-mark{width:100%;opacity:1}
+.card h3{transition:color var(--dur) var(--ease)}
+.card:hover h3{color:var(--gold-d)}
+
 /* === recipe overrides (stone) === */
 /* ====== STONE / KAMIENIARSTWO — premium override ====== */
 /* Ton godny, stonowany. Off-white kamienny, przygaszone złoto, hairline'y zamiast cieni. */
@@ -221,12 +250,12 @@ section{padding:124px 0}
 
 /* Pasek atutów — ciemne tło zostaje (lepszy kontrast złota), serif w liczbach */
 .strip .wrap{font-size:.86rem;letter-spacing:.4px}
-.strip b{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:600}
+.strip b{color:var(--gold);font-family:'Spectral',serif;font-size:1.18rem;font-weight:600}
 
 /* Karty: HAIRLINE zamiast ciężkiego cienia, ostrzejsza forma kamienia */
 .card{background:var(--white);border:1px solid rgba(156,124,70,.22);border-radius:4px;padding:38px 32px;box-shadow:none}
 .card:hover{transform:none;box-shadow:none;border-color:var(--gold);background:var(--cream)}
-.card .ic{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:600;color:var(--gold);letter-spacing:0}
+.card .ic{font-family:'Spectral',serif;font-size:1.9rem;font-weight:600;color:var(--gold);letter-spacing:0}
 .card .ic::after{height:1px;width:24px;background:var(--gold);opacity:.5}
 .card h3{font-weight:500;font-size:1.28rem}
 .card p{line-height:1.7}
@@ -236,7 +265,7 @@ section{padding:124px 0}
 .about-art{border-radius:4px;box-shadow:none}
 .about-art::before{background:linear-gradient(160deg,rgba(31,28,26,.4),rgba(31,28,26,.66))}
 /* Cytat w serif — godny, refleksyjny */
-.about-art .q{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.55rem}
+.about-art .q{font-family:'Spectral',serif;font-weight:500;font-size:1.55rem}
 .about-art .q span{color:var(--gold)}
 /* Inicjał-wersalik jak grawer — duża pierwsza litera cytatu w złocie (anty-AI) */
 .about-art .q::first-letter{font-size:2.4em;line-height:.8;color:var(--gold);float:left;margin:.04em .12em 0 0;font-weight:600}
@@ -270,27 +299,28 @@ footer{background:var(--espresso)}
   section{padding:80px 0}
   .gallery{gap:2px}
 }
+section[id]{scroll-margin-top:84px}
 </style>
 </head>
 <body>
 <header><div class="wrap"><nav>
-  <div class="logo">MULTI-GRANIT Ireneusz <span>Kita</span></div>
+  <div class="logo">MULTI-GRANIT<span></span></div>
   <div class="nav-links" id="menu">
-    <a href="#oferta">Oferta</a><a href="#onas">O nas</a><a href="#galeria">Galeria</a><a href="#kontakt">Kontakt</a>
+    <a href="#oferta">Oferta</a><a href="#onas">O nas</a><a href="#material">Materiał</a><a href="#galeria">Nasze prace</a><a href="#kontakt">Kontakt</a>
     <a class="btn btn-gold" href="tel:+48601412851">Zobacz nasze realizacje</a>
   </div>
   <button class="burger" id="burger" aria-label="Menu">☰</button>
 </nav></div></header>
 
 <section class="ed-hero" style="padding:0">
-  <div class="ed-hero-img" role="img" aria-label="MULTI-GRANIT Ireneusz Kita">
+  <div class="ed-hero-img" role="img" aria-label="MULTI-GRANIT">
     <div class="wrap ed-hero-cap reveal">
-      <span class="eyebrow">Galanteria z granitu i marmuru · Częstochowa</span>
-      <h1>Kamień naturalny <em>obrobiony na wymiar</em></h1>
+      <span class="eyebrow">Zakład kamieniarski · Częstochowa · od 1985</span>
+      <h1>Nagrobki tworzone <em>z szacunkiem do pamięci</em></h1>
     </div>
   </div>
   <div class="wrap ed-hero-lead reveal">
-    <p>Wykonujemy blaty, parapety, schody i obudowy kominków z granitu, marmuru i konglomeratu — od doboru płyty, przez precyzyjne cięcie, po montaż u Ciebie. Pracujemy z kamieniem naturalnym, który dobrze obrobiony zostaje w domu na pokolenia.</p>
+    <p>Wykonujemy nagrobki i pomniki z granitu — od indywidualnego projektu, przez obróbkę kamienia, po staranny montaż. Spokojnie i bez pośpiechu pomożemy dobrać formę, materiał i napis, tak by miejsce pamięci wyglądało godnie przez lata.</p>
     <div class="hero-cta">
       <a class="btn btn-gold" href="tel:+48601412851">Zobacz nasze realizacje</a>
       <a class="btn btn-dark" href="tel:+48601412851">Zadzwoń: +48 601 412 851</a>
@@ -299,75 +329,84 @@ footer{background:var(--espresso)}
 </section>
 
 <div class="strip"><div class="wrap">
-  <span>✦ <b>Kamień</b>&nbsp;naturalny</span>
-  <span>✦ <b>Cięcie</b>&nbsp;na wymiar</span>
+  <span>✦ <b>Trwały</b>&nbsp;granit</span>
+  <span>✦ <b>Indywidualny</b>&nbsp;projekt</span>
   <span>✦ <b>Własny</b>&nbsp;montaż</span>
   <span>✦ <b>Uczciwa</b>&nbsp;wycena</span>
 </div></div>
 
 <section id="oferta"><div class="wrap">
-  <div class="head reveal" style="text-align:left;max-width:46rem;margin:0 0 40px"><span class="eyebrow">Czym się zajmujemy</span><h2>Nasza oferta</h2><p style="margin-inline:0">Z jednego kawałka kamienia potrafimy zrobić blat, parapet i stopnie do tego samego wnętrza. Przynieś wymiary albo umów pomiar — dobierzemy materiał, kolor i wykończenie krawędzi.</p></div>
+  <div class="head reveal" style="text-align:left;max-width:46rem;margin:0 0 40px"><span class="eyebrow">Czym się zajmujemy</span><h2>Nasza oferta</h2><p style="margin-inline:0">Każde zlecenie traktujemy indywidualnie i z należytym wyczuciem. Doradzimy w wyborze kamienia, formy i napisu, a całość wykonamy we własnym zakładzie — od projektu po ustawienie na miejscu.</p></div>
   <div class="ed-offer">
-    <div class="erow reveal"><div class="num">01</div><div class="ttl">Blaty kuchenne i łazienkowe</div><div class="desc">Blaty z granitu, marmuru i konglomeratu cięte na wymiar — odporne na zarysowania, gorąco i wilgoć.</div></div>
-    <div class="erow reveal"><div class="num">02</div><div class="ttl">Parapety wewnętrzne i zewnętrzne</div><div class="desc">Parapety z kamienia w jednym kawałku — eleganckie, łatwe w czyszczeniu i trwałe na lata.</div></div>
-    <div class="erow reveal"><div class="num">03</div><div class="ttl">Schody i posadzki</div><div class="desc">Stopnie, podstopnie i posadzki z granitu — solidne, nieślizgające się, w spójnym wykończeniu z resztą wnętrza.</div></div>
-    <div class="erow reveal"><div class="num">04</div><div class="ttl">Obudowy kominków</div><div class="desc">Kominki i obudowy z kamienia odpornego na temperaturę — efektowny detal, który ogniskuje wnętrze.</div></div>
-    <div class="erow reveal"><div class="num">05</div><div class="ttl">Nagrobki i galanteria</div><div class="desc">Nagrobki, pomniki i elementy z granitu wykonane z szacunkiem do pamięci i dbałością o detal.</div></div>
-    <div class="erow reveal"><div class="num">06</div><div class="ttl">Cięcie i obróbka kamienia</div><div class="desc">Cięcie, polerowanie, fazowanie i frezowanie płyt — także elementy nietypowe na indywidualne zamówienie.</div></div>
+    <div class="erow reveal"><div class="num">01</div><div class="ttl">Nagrobki granitowe</div><div class="desc">Nagrobki pojedyncze i podwójne z trwałego granitu, w klasycznych i nowoczesnych formach.</div></div>
+    <div class="erow reveal"><div class="num">02</div><div class="ttl">Pomniki na zamówienie</div><div class="desc">Indywidualne projekty pomników dopasowane do oczekiwań rodziny i charakteru miejsca.</div></div>
+    <div class="erow reveal"><div class="num">03</div><div class="ttl">Renowacja nagrobków</div><div class="desc">Odnawianie, czyszczenie i poprawa starszych nagrobków, by wróciły do godnego stanu.</div></div>
+    <div class="erow reveal"><div class="num">04</div><div class="ttl">Liternictwo i napisy</div><div class="desc">Wykonanie i odnowienie napisów, liter oraz złoceń — czytelnie i estetycznie.</div></div>
+    <div class="erow reveal"><div class="num">05</div><div class="ttl">Grobowce i obramowania</div><div class="desc">Piwnice, obramowania i elementy uzupełniające, montowane solidnie i z dbałością o detal.</div></div>
+    <div class="erow reveal"><div class="num">06</div><div class="ttl">Produkcja i montaż</div><div class="desc">Całość wykonujemy we własnym zakładzie — od obróbki granitu po solidny montaż na miejscu, na cmentarzu.</div></div>
   </div>
   <p class="price-note">Wycena i terminy ustalane indywidualnie: <a href="tel:+48601412851" style="color:var(--gold-d);font-weight:500">Zobacz nasze realizacje →</a></p>
 </div></section>
 
 <section class="ed-quote"><div class="wrap reveal">
-  <blockquote>„Dobrze dobrana i obrobiona płyta kamienia <span>zostaje w domu na pokolenia</span>.”</blockquote>
+  <blockquote>„Wykonujemy każdy nagrobek tak, jak <span>chcielibyśmy uczcić własnych bliskich</span>.”</blockquote>
 </div></section>
 
 <section class="about" id="onas"><div class="wrap ed-about">
   <div class="ed-about-txt reveal">
-    <span class="eyebrow">O nas</span><h2>Pracownia kamienia z głową do detalu</h2>
-    <p>MULTI-GRANIT Ireneusz Kita to pracownia, w której granit, marmur i konglomerat zamieniają się w blaty, parapety, schody i obudowy kominków. Pracujemy z kamieniem od doboru płyty po montaż na miejscu — bez pośrednictwa, dzięki czemu trzymamy rękę na każdym etapie i odpowiadamy za jakość całości.</p><p>Doradzamy rodzaj kamienia, kolor i wykończenie krawędzi tak, żeby pasowały do wnętrza i sposobu użytkowania. Mierzymy precyzyjnie, tniemy dokładnie i montujemy czysto. Przygotujemy uczciwą wycenę, dotrzymamy terminu, a po pracy zostawimy porządek.</p>
+    <span class="eyebrow">O nas</span><h2>Od 1985 roku przy granicie</h2>
+    <p>MULTI-GRANIT to zakład prowadzony nieprzerwanie od 1985 roku. Specjalizujemy się wyłącznie w nagrobkach z granitu — produkcję i montaż prowadzimy we własnym zakładzie, bez pośredników, dzięki czemu mamy pełną kontrolę nad jakością na każdym etapie.</p><p>Firmę prowadzi inżynier budownictwa, co przekłada się na precyzję, trwałość i solidne fundamenty każdej realizacji. Pracujemy na najwyższych obrotach, by rodziny mogły godnie upamiętnić swoich bliskich — spokojnie, z wyczuciem i bez pośpiechu w rozmowie.</p>
     <a class="btn btn-dark" href="#kontakt" style="margin-top:8px">Odwiedź nas</a>
   </div>
-  <div class="ed-about-img reveal" role="img" aria-label="MULTI-GRANIT Ireneusz Kita"></div>
+  <div class="ed-about-img reveal" role="img" aria-label="MULTI-GRANIT"></div>
+</div></section>
+
+<section id="material" style="background:var(--cream-2)"><div class="wrap ed-about" style="grid-template-columns:.9fr 1.1fr">
+  <div class="ed-about-img reveal" role="img" aria-label="Pomnik z granitu" style="background:url('img/g4.jpg') center/cover no-repeat"></div>
+  <div class="ed-about-txt reveal">
+    <span class="eyebrow">Materiał</span><h2>Dlaczego granit</h2>
+    <p>Pracujemy wyłącznie na granicie — skale magmowej, jednej z najtwardszych i najbardziej odpornych na warunki atmosferyczne. Nie chłonie wody, nie blaknie na słońcu i nie kruszeje przez dziesięciolecia.</p>
+    <p>Dlatego granit sprawdza się najlepiej na nagrobki, które mają przetrwać pokolenia. Po wypolerowaniu zyskuje głęboki, dostojny połysk i niepowtarzalny rysunek kamienia — każdy pomnik jest więc trwały i ponadczasowy.</p>
+  </div>
 </div></section>
 
 <section id="galeria"><div class="wrap">
-  <div class="head reveal"><span class="eyebrow">Galeria</span><h2>Z czego i co tworzymy</h2><p>Wybrane realizacje i rodzaje kamienia, z którym pracujemy — od blatów kuchennych, przez schody i parapety, po obudowy kominków. Pełne portfolio pokażemy podczas rozmowy.</p></div>
+  <div class="head reveal"><span class="eyebrow">Realizacje</span><h2>Nasze prace</h2><p>Wybrane nagrobki i pomniki, które wykonaliśmy z granitu. Formę, kamień i napis dobieramy zawsze indywidualnie — pełne portfolio pokażemy podczas spotkania.</p></div>
   <div class="ed-gallery">
-    <div class="tile reveal" style="background-image:url('img/g1.jpg')"><span>Blat kuchenny z granitu</span></div>
-    <div class="tile reveal" style="background-image:url('img/g2.jpg')"><span>Obudowa kominka</span></div>
-    <div class="tile reveal" style="background-image:url('img/g3.jpg')"><span>Blat na wymiar</span></div>
-    <div class="tile reveal" style="background-image:url('img/g4.jpg')"><span>Schody z kamienia</span></div>
-    <div class="tile reveal" style="background-image:url('img/g5.jpg')"><span>Kominek z marmuru</span></div>
-    <div class="tile reveal" style="background-image:url('img/g6.jpg')"><span>Kamienna ściana z kominkiem</span></div>
+    <div class="tile reveal" style="background-image:url('img/g1.jpg')"><span>Nagrobek z ciemnego granitu</span></div>
+    <div class="tile reveal" style="background-image:url('img/g2.jpg')"><span>Zadbane miejsce pamięci</span></div>
+    <div class="tile reveal" style="background-image:url('img/g3.jpg')"><span>Krzyż i kamień</span></div>
+    <div class="tile reveal" style="background-image:url('img/g4.jpg')"><span>Nagrobek z granitu</span></div>
+    <div class="tile reveal" style="background-image:url('img/g5.jpg')"><span>Pomnik z obramowaniem</span></div>
+    <div class="tile reveal" style="background-image:url('img/g6.jpg')"><span>Nagrobek z jasnego granitu</span></div>
   </div>
 </div></section>
 
 <section class="reviews ed"><div class="wrap reveal">
-  <h2>Zaufali nam klienci</h2><p>Klienci, którzy zamówili u nas blaty, parapety czy schody, doceniają precyzję wykonania, dobór kamienia i to, że dotrzymujemy ustaleń oraz terminów.</p>
-  <a class="btn btn-gold" href="tel:+48601412851">Zadzwoń i opisz swój projekt</a>
+  <h2>Zaufały nam rodziny</h2><p>Rodziny, które powierzyły nam wykonanie nagrobka, doceniają spokojne podejście, solidne rzemiosło i to, że dotrzymujemy ustaleń oraz terminów.</p>
+  <a class="btn btn-gold" href="tel:+48601412851">Zadzwoń i porozmawiajmy spokojnie</a>
 </div></section>
 
 <section id="kontakt" class="about"><div class="wrap">
   <div class="head reveal"><span class="eyebrow">Zapraszamy</span><h2>Kontakt i rezerwacja</h2></div>
   <div class="contact-grid">
     <div class="info reveal">
-      <div class="row"><span class="ic">📍</span><div><b>Adres</b><p>Rolnicza 17, 42-200 Częstochowa</p></div></div>
+      <div class="row"><span class="ic">📍</span><div><b>Adres</b><p>Częstochowa, śląskie</p></div></div>
       <div class="row"><span class="ic">📞</span><div><b>Telefon</b><p><a href="tel:+48601412851">+48 601 412 851</a></p></div></div>
-      <div class="row"><span class="ic">🗓️</span><div><b>Rezerwacja</b><p>Zadzwoń i zamów wycenę</p></div></div>
-      <div class="row"><span class="ic">⏰</span><div><b>Godziny</b><p>Zadzwoń — doradzimy materiał i przygotujemy wycenę</p></div></div>
+      <div class="row"><span class="ic">🗓️</span><div><b>Rezerwacja</b><p>Zadzwoń i umów spokojną rozmowę</p></div></div>
+      <div class="row"><span class="ic">⏰</span><div><b>Godziny</b><p>Zapraszamy — zadzwoń, ustalimy dogodny termin</p></div></div>
       <div class="contact-cta"><a class="btn btn-gold" href="tel:+48601412851">Zobacz nasze realizacje</a></div>
     </div>
-    <div class="map reveal"><iframe src="https://maps.google.com/maps?q=50.8271195%2C19.1309072&z=15&output=embed" loading="lazy" title="Mapa — MULTI-GRANIT Ireneusz Kita"></iframe></div>
+    <div class="map reveal"><iframe src="https://maps.google.com/maps?q=50.8271195%2C19.1309072&z=15&output=embed" loading="lazy" title="Mapa — MULTI-GRANIT"></iframe></div>
   </div>
 </div></section>
 
 <a class="callbar" href="tel:+48601412851">📞 Zadzwoń: +48 601 412 851</a>
 
 <footer>
-  <div class="logo">MULTI-GRANIT Ireneusz <span style="color:var(--gold)">Kita</span></div>
-  <p>Rolnicza 17, 42-200 Częstochowa · +48 601 412 851</p>
-  <p style="margin-top:6px;opacity:.7">© 2026 MULTI-GRANIT Ireneusz Kita &nbsp;·&nbsp; Projekt strony: Krzysztof Brzeziński</p>
+  <div class="logo">MULTI-GRANIT<span style="color:var(--gold)"></span></div>
+  <p>Częstochowa, śląskie · +48 601 412 851</p>
+  <p style="margin-top:6px;opacity:.7">© 2026 MULTI-GRANIT &nbsp;·&nbsp; Projekt strony: Krzysztof Brzeziński</p>
 </footer>
 
 <script>
